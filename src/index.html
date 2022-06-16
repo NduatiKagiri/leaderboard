@@ -14,39 +14,19 @@
         <div class="recent-scores">
           <div class="recents-heading">
             <h2>Recent Scores</h2>
-            <button type="button" name="button">Refresh</button>
+            <button type="button" id="refresh">Refresh</button>
           </div>
           <div class="scores">
-            <table>
-              <tr>
-                <td>Name: 100</td>
-              </tr>
-              <tr>
-                <td>Name: 20</td>
-              </tr>
-              <tr>
-                <td>Name: 50</td>
-              </tr>
-              <tr>
-                <td>Name: 78</td>
-              </tr>
-              <tr>
-                <td>Name: 125</td>
-              </tr>
-              <tr>
-                <td>Name: 75</td>
-              </tr>
-              <tr>
-                <td>Name: 42</td>
-              </tr>
+            <table id="allScores">
+              
             </table>
           </div>
         </div>
         <div class="add-scores">
           <h2>Add Your Score</h2>
-          <form class="" method="post">
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your Score">
+          <form class="" method="post" id="gameForm">
+            <input type="text" placeholder="Your Name" id="playerName" required>
+            <input type="number" placeholder="Your Score" id="playerScore" required>
             <button type="submit">Submit</button>
           </form>
         </div>
