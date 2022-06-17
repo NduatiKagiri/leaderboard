@@ -1,5 +1,5 @@
 const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
-const gameID = 'PGm0dj8ouOmWqOTT75Kk';
+const gameID = 'nCBklMtLnRcKVwLtTJh8';
 
 const displayScores = (scores) => {
   scores.sort((a, b) => b.score - a.score);
