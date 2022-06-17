@@ -7,9 +7,9 @@
 - HTML, CSS, JS
 - ESLint, Stylelint, Web Hint, Lighthouse, Webpack
 
-<!-- ## Online Version Link
+## Online Version Link
 This project is available online through the following link.
-https://leaderboard.nduatikagiri.co.ke -->
+https://leaderboard.nduatikagiri.co.ke
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
