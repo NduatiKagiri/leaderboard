@@ -1,7 +1,7 @@
 import './style.css';
 import Scores from './modules/scores.js';
 
-const gameID = 'PGm0dj8ouOmWqOTT75Kk';
+const gameID = 'nCBklMtLnRcKVwLtTJh8';
 
 const gameForm = document.getElementById('gameForm');
 const refreshBtn = document.getElementById('refresh');

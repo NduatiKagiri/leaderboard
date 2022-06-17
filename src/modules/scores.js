@@ -1,14 +1,32 @@
 const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
-const gameID = 'PGm0dj8ouOmWqOTT75Kk';
+const gameID = 'nCBklMtLnRcKVwLtTJh8';
 
 const displayScores = (scores) => {
-  document.getElementById('allScores').innerHTML = '';
-  scores.forEach((score) => {
+  scores.sort((a, b) => b.score - a.score);
+  document.getElementById('allScores').innerHTML = `
+  <tr class="tableHeader">
+    <td>PLAYER NAME</td>
+    <td>PLAYER SCORE</td>
+  </tr>
+  `;
+  let oddEven = '';
+  scores.forEach((score, index) => {
+    if ((index + 1) % 2 === 0) {
+      oddEven = '1';
+    } else {
+      oddEven = '0';
+    }
     document.getElementById('allScores').innerHTML += `
-    <tr>
-      <td>${score.user}: ${score.score}</td>
+    <tr class="oddEven${oddEven}">
+      <td>${score.user}</td>
+      <td>${score.score}</td>
     </tr>
     `;
+  });
+
+  const allScores = document.querySelectorAll('#allScores tr');
+  allScores.forEach((score, index) => {
+    score.style.animation = `displayRows 0.5s ease forwards ${index / 7 - 0.5}s`;
   });
 };
 
