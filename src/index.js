@@ -4,7 +4,7 @@ import Scores from './modules/scores.js';
 const gameID = 'PGm0dj8ouOmWqOTT75Kk';
 
 const gameForm = document.getElementById('gameForm');
-const refresh = document.getElementById('refresh');
+const refreshBtn = document.getElementById('refresh');
 
 gameForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -18,6 +18,6 @@ gameForm.addEventListener('submit', (event) => {
   playerScore = '';
 });
 
-refresh.addEventListener('click', Scores.requestScores);
+refreshBtn.addEventListener('click', Scores.requestScores);
 
 Scores.requestScores();
